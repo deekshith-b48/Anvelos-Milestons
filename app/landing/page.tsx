@@ -1,6 +1,5 @@
-import Link from 'next/link';
 import ThemeToggle from '@/components/ThemeToggle';
-import { Rocket, LayoutDashboard, Component, ArrowRight, Sparkles, Layers, Code2, Zap } from 'lucide-react';
+import { Rocket, LayoutDashboard, ArrowRight, Sparkles, Layers, Code2, Zap } from 'lucide-react';
 
 export default function Landing() {
   return (

@@ -9,8 +9,10 @@ export default function ThemeToggle() {
   useEffect(() => {
     // Check initial theme from document class
     if (document.documentElement.classList.contains('dark')) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDark(true);
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDark(true);
       document.documentElement.classList.add('dark');
     }
