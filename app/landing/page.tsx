@@ -57,7 +57,7 @@ export default function Landing() {
         <div id="milestones" className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[320px]">
           
           {/* Milestone 1 (Spans 1 column) */}
-          <a href="/milestone-1/index.html" className="group relative col-span-1 bg-white/80 dark:bg-white/5 backdrop-blur-md p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 overflow-hidden hover:border-primary-500/50 transition-colors duration-500 flex flex-col justify-between">
+          <a href="/milestone-1" className="group relative col-span-1 bg-white/80 dark:bg-white/5 backdrop-blur-md p-8 rounded-[2rem] border border-slate-200 dark:border-white/10 overflow-hidden hover:border-primary-500/50 transition-colors duration-500 flex flex-col justify-between">
             <div className="absolute inset-0 bg-gradient-to-br from-primary-500/0 to-primary-500/0 group-hover:from-primary-500/5 group-hover:to-transparent transition-all duration-500"></div>
             <div>
               <div className="w-12 h-12 rounded-2xl bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-700 dark:text-slate-200 mb-6 group-hover:scale-110 group-hover:bg-primary-500 group-hover:text-white transition-all duration-300">
@@ -74,7 +74,7 @@ export default function Landing() {
           </a>
 
           {/* Milestone 2 (Spans 2 columns) */}
-          <a href="/milestone-2/index.html" className="group relative col-span-1 md:col-span-2 bg-slate-900 dark:bg-[#111111] p-8 rounded-[2rem] border border-slate-800 dark:border-white/10 overflow-hidden hover:border-accent-500/50 transition-colors duration-500 flex flex-col justify-between">
+          <a href="/milestone-2" className="group relative col-span-1 md:col-span-2 bg-slate-900 dark:bg-[#111111] p-8 rounded-[2rem] border border-slate-800 dark:border-white/10 overflow-hidden hover:border-accent-500/50 transition-colors duration-500 flex flex-col justify-between">
             {/* Background Image / Decoration */}
             <div className="absolute right-0 bottom-0 opacity-20 group-hover:opacity-40 transition-opacity duration-500 translate-x-1/4 translate-y-1/4">
               <LayoutDashboard size={250} className="text-accent-500" />
@@ -96,7 +96,7 @@ export default function Landing() {
           </a>
 
           {/* Milestone 3 (Spans all 3 columns) */}
-          <a href="/milestone-3/index.html" className="group relative col-span-1 md:col-span-3 bg-gradient-to-r from-primary-600 to-accent-600 p-8 md:p-12 rounded-[2rem] border border-white/20 overflow-hidden hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-500 flex flex-col md:flex-row items-center justify-between gap-8">
+          <a href="/milestone-3" className="group relative col-span-1 md:col-span-3 bg-gradient-to-r from-primary-600 to-accent-600 p-8 md:p-12 rounded-[2rem] border border-white/20 overflow-hidden hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-500 flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Glowing orb inside card */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-white/10 blur-3xl rounded-full scale-0 group-hover:scale-150 transition-transform duration-1000 ease-out"></div>
             
