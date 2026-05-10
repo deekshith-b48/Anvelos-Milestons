@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1>My To-Do List</h1>
+            <p class="subtitle">Stay organized and productive</p>
+        </header>
+
+        <div class="add-task-section">
+            <form id="taskForm" class="task-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        class="task-input" 
+                        placeholder="Add a new task..."
+                        aria-label="Task input"
+                    >
+                    <button type="submit" class="btn-add" aria-label="Add task">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Add Task
+                    </button>
+                </div>
+                <div id="errorMessage" class="error-message" role="alert"></div>
+            </form>
+        </div>
+
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <h2>Tasks</h2>
+                <span id="taskCount" class="task-count">0 tasks</span>
+            </div>
+            
+            <div id="emptyState" class="empty-state">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="38" stroke="#E5E7EB" stroke-width="4"/>
+                    <path d="M40 25V40M40 40V55M40 40H55M40 40H25" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <p>No tasks yet</p>
+                <span>Add your first task to get started!</span>
+            </div>
+
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

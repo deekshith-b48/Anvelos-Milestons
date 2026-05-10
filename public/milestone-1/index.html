@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Introduce Your Product Quickly & Effectively — a fast, powerful, and modern landing page solution." />
+  <title>Landing — Introduce Your Product Quickly & Effectively</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================= -->
+  <header>
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light lp-navbar fixed-top">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand lp-brand" href="#" id="nav-logo">
+          <i class="bi bi-layers-fill lp-brand-icon"></i>
+          Landing
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler lp-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto lp-nav-links">
+            <li class="nav-item">
+              <a class="nav-link lp-nav-link active" aria-current="page" href="#hero" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lp-nav-link" href="#features" id="nav-features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lp-nav-link" href="#about" id="nav-about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lp-nav-link" href="#pricing" id="nav-pricing">Pricing</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2 lp-nav-cta">
+            <a href="#" id="nav-login-btn" class="btn lp-btn-outline">Log in</a>
+            <a href="#" id="nav-signup-btn" class="btn lp-btn-primary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================
+         HERO SECTION
+    ============================= -->
+    <section id="hero" class="lp-hero">
+      <div class="container">
+        <div class="row align-items-center lp-hero-row">
+
+          <!-- Left: Text Content -->
+          <div class="col-lg-6 col-md-12 lp-hero-text" data-animate="fade-up">
+            <h1 class="lp-hero-title">
+              Introduce Your Product<br />
+              <span class="lp-hero-title-highlight">Quickly &amp; Effectively</span>
+            </h1>
+            <p class="lp-hero-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit.
+            </p>
+            <div class="d-flex flex-wrap gap-3 lp-hero-actions">
+              <a href="#" id="hero-get-started-btn" class="btn lp-btn-primary lp-btn-lg">
+                Get Started
+              </a>
+              <a href="#" id="hero-learn-more-btn" class="btn lp-btn-outline lp-btn-lg">
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Illustration -->
+          <div class="col-lg-6 col-md-12 lp-hero-image" data-animate="fade-left">
+            <div class="lp-hero-img-wrapper">
+              <div class="lp-hero-circle"></div>
+              <img src="hero-illustration.png" alt="Person working at computer with tech icons" class="lp-hero-img img-fluid" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Decorative dots -->
+      <div class="lp-dots lp-dots-hero" aria-hidden="true">
+        <span class="lp-dot"></span><span class="lp-dot"></span><span class="lp-dot"></span>
+        <span class="lp-dot"></span><span class="lp-dot"></span><span class="lp-dot"></span>
+        <span class="lp-dot"></span><span class="lp-dot"></span><span class="lp-dot"></span>
+      </div>
+    </section>
+
+    <!-- ============================
+         STATS STRIP
+    ============================= -->
+    <section id="stats" class="lp-stats">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="lp-stat-item">
+              <span class="lp-stat-number">10K+</span>
+              <span class="lp-stat-label">Happy Clients</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="lp-stat-item">
+              <span class="lp-stat-number">200+</span>
+              <span class="lp-stat-label">Projects Done</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="lp-stat-item">
+              <span class="lp-stat-number">50+</span>
+              <span class="lp-stat-label">Team Members</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="lp-stat-item">
+              <span class="lp-stat-number">99%</span>
+              <span class="lp-stat-label">Satisfaction Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         FEATURES OVERVIEW SECTION
+    ============================= -->
+    <section id="features" class="lp-section lp-features-overview">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center lp-section-header" data-animate="fade-up">
+            <span class="lp-section-badge">Why Choose Us</span>
+            <h2 class="lp-section-title">Light, Fast &amp; Powerful</h2>
+            <p class="lp-section-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+              Duis aute irure dolor in reprehenderit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature Mini Cards -->
+        <div class="row g-4 mt-2">
+          <div class="col-sm-6 col-lg-3" data-animate="fade-up">
+            <div class="lp-mini-card" id="mini-card-speed">
+              <div class="lp-mini-card-icon lp-icon-blue">
+                <i class="bi bi-lightning-charge-fill"></i>
+              </div>
+              <h5 class="lp-mini-card-title">Blazing Fast</h5>
+              <p class="lp-mini-card-text">Optimized for speed so your users never wait.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-animate="fade-up" style="--delay: 0.1s">
+            <div class="lp-mini-card" id="mini-card-design">
+              <div class="lp-mini-card-icon lp-icon-purple">
+                <i class="bi bi-brush-fill"></i>
+              </div>
+              <h5 class="lp-mini-card-title">Beautiful Design</h5>
+              <p class="lp-mini-card-text">Pixel-perfect components built for impact.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-animate="fade-up" style="--delay: 0.2s">
+            <div class="lp-mini-card" id="mini-card-secure">
+              <div class="lp-mini-card-icon lp-icon-green">
+                <i class="bi bi-shield-fill-check"></i>
+              </div>
+              <h5 class="lp-mini-card-title">Secure</h5>
+              <p class="lp-mini-card-text">Enterprise-grade security baked in by default.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3" data-animate="fade-up" style="--delay: 0.3s">
+            <div class="lp-mini-card" id="mini-card-support">
+              <div class="lp-mini-card-icon lp-icon-orange">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h5 class="lp-mini-card-title">24/7 Support</h5>
+              <p class="lp-mini-card-text">Round-the-clock help whenever you need it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Detail Row with illustration -->
+        <div class="row align-items-center mt-5 lp-feature-detail-row" data-animate="fade-up">
+          <div class="col-md-5 lp-feature-detail-img-col">
+            <img src="feature1.png" alt="Woman standing next to mobile app with review interface" class="img-fluid lp-feature-img" />
+          </div>
+          <div class="col-md-7 lp-feature-detail-text">
+            <span class="lp-section-badge">Features</span>
+            <h3 class="lp-feature-detail-title">Light, Fast &amp; Powerful</h3>
+            <p class="lp-feature-detail-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
+            </p>
+            <ul class="lp-check-list">
+              <li><i class="bi bi-check-circle-fill lp-check-icon"></i> High performance engine</li>
+              <li><i class="bi bi-check-circle-fill lp-check-icon"></i> Mobile-first responsive design</li>
+              <li><i class="bi bi-check-circle-fill lp-check-icon"></i> Real-time analytics dashboard</li>
+            </ul>
+            <a href="#" id="feature1-learn-more-btn" class="btn lp-btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         ABOUT SECTIONS (alternating)
+    ============================= -->
+    <section id="about" class="lp-section lp-about">
+      <div class="container">
+
+        <!-- Row 1: Image Left, Text Right -->
+        <div class="row align-items-center lp-about-row" data-animate="fade-up">
+          <div class="col-md-5 order-md-1 order-2 lp-about-img-col">
+            <img src="feature2.png" alt="Woman sharing social media content with botanical decorations" class="img-fluid lp-about-img" />
+          </div>
+          <div class="col-md-7 order-md-2 order-1 lp-about-text">
+            <span class="lp-section-badge">About Us</span>
+            <h2 class="lp-about-title">Light, Fast &amp; Powerful</h2>
+            <p class="lp-about-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <p class="lp-about-desc">
+              Sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+              unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            </p>
+            <a href="#" id="about1-read-more-btn" class="btn lp-btn-primary mt-2">Read More</a>
+          </div>
+        </div>
+
+        <!-- Row 2: Text Left, Image Right -->
+        <div class="row align-items-center lp-about-row" data-animate="fade-up">
+          <div class="col-md-7 lp-about-text">
+            <span class="lp-section-badge">Our Mission</span>
+            <h2 class="lp-about-title">Light, Fast &amp; Powerful</h2>
+            <p class="lp-about-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+            <p class="lp-about-desc">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+            <a href="#" id="about2-read-more-btn" class="btn lp-btn-primary mt-2">Read More</a>
+          </div>
+          <div class="col-md-5 lp-about-img-col">
+            <img src="feature3.png" alt="Person sitting next to a large @ symbol with botanical elements" class="img-fluid lp-about-img" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================
+         PRICING SECTION
+    ============================= -->
+    <section id="pricing" class="lp-section lp-pricing">
+      <div class="container">
+
+        <!-- Header -->
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center lp-section-header" data-animate="fade-up">
+            <span class="lp-section-badge">Pricing</span>
+            <h2 class="lp-section-title">A Price To Suit Everyone</h2>
+            <p class="lp-section-desc">
+              Choose the plan that fits your needs. Start free and scale as you grow —
+              no hidden fees, no surprises.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="row g-4 justify-content-center mt-2">
+
+          <!-- Starter -->
+          <div class="col-md-6 col-lg-4" data-animate="fade-up">
+            <div class="lp-pricing-card" id="pricing-starter">
+              <div class="lp-pricing-header">
+                <span class="lp-pricing-plan">Starter</span>
+                <div class="lp-pricing-price">
+                  <span class="lp-price-currency">$</span>
+                  <span class="lp-price-amount">0</span>
+                  <span class="lp-price-period">/mo</span>
+                </div>
+                <p class="lp-pricing-tagline">Perfect for individuals</p>
+              </div>
+              <ul class="lp-pricing-features">
+                <li><i class="bi bi-check-lg lp-feat-check"></i> 5 Projects</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> 10 GB Storage</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Basic Analytics</li>
+                <li class="lp-feat-disabled"><i class="bi bi-x-lg lp-feat-x"></i> Priority Support</li>
+                <li class="lp-feat-disabled"><i class="bi bi-x-lg lp-feat-x"></i> Custom Domain</li>
+              </ul>
+              <a href="#" id="pricing-starter-btn" class="btn lp-btn-outline w-100 mt-3">Get Started Free</a>
+            </div>
+          </div>
+
+          <!-- Pro (Featured) -->
+          <div class="col-md-6 col-lg-4" data-animate="fade-up" style="--delay: 0.1s">
+            <div class="lp-pricing-card lp-pricing-featured" id="pricing-pro">
+              <div class="lp-pricing-badge-wrap">
+                <span class="lp-pricing-popular">Most Popular</span>
+              </div>
+              <div class="lp-pricing-header">
+                <span class="lp-pricing-plan">Pro</span>
+                <div class="lp-pricing-price">
+                  <span class="lp-price-currency">$</span>
+                  <span class="lp-price-amount">40</span>
+                  <span class="lp-price-period">/mo</span>
+                </div>
+                <p class="lp-pricing-tagline">Great for small teams</p>
+              </div>
+              <ul class="lp-pricing-features">
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Unlimited Projects</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> 100 GB Storage</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Advanced Analytics</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Priority Support</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Custom Domain</li>
+              </ul>
+              <a href="#" id="pricing-pro-btn" class="btn lp-btn-white w-100 mt-3">Start 14-Day Trial</a>
+            </div>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="col-md-6 col-lg-4" data-animate="fade-up" style="--delay: 0.2s">
+            <div class="lp-pricing-card" id="pricing-enterprise">
+              <div class="lp-pricing-header">
+                <span class="lp-pricing-plan">Enterprise</span>
+                <div class="lp-pricing-price">
+                  <span class="lp-price-currency">$</span>
+                  <span class="lp-price-amount">99</span>
+                  <span class="lp-price-period">/mo</span>
+                </div>
+                <p class="lp-pricing-tagline">For large organizations</p>
+              </div>
+              <ul class="lp-pricing-features">
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Everything in Pro</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> 1 TB Storage</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Custom Integrations</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> Dedicated Manager</li>
+                <li><i class="bi bi-check-lg lp-feat-check"></i> SLA Guarantee</li>
+              </ul>
+              <a href="#" id="pricing-enterprise-btn" class="btn lp-btn-outline w-100 mt-3">Contact Sales</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         NEWSLETTER / CTA SECTION
+    ============================= -->
+    <section id="newsletter" class="lp-section lp-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-animate="fade-up">
+            <span class="lp-section-badge lp-badge-light">Stay Updated</span>
+            <h2 class="lp-newsletter-title">Get the Latest Updates</h2>
+            <p class="lp-newsletter-desc">
+              Subscribe to our newsletter and be the first to know about new features,
+              tips, and exclusive offers.
+            </p>
+            <form id="newsletter-form" class="lp-newsletter-form row g-2 justify-content-center mt-4" novalidate>
+              <div class="col-sm-8 col-12">
+                <label for="newsletter-email" class="visually-hidden">Email address</label>
+                <input type="email" id="newsletter-email" class="form-control lp-form-input"
+                  placeholder="Enter your email address" required />
+              </div>
+              <div class="col-sm-4 col-12">
+                <button type="submit" id="newsletter-submit-btn" class="btn lp-btn-primary w-100">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer id="footer" class="lp-footer">
+    <div class="container">
+      <div class="row g-4 lp-footer-top">
+
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <a class="lp-brand d-flex align-items-center gap-2 mb-3" href="#" id="footer-logo">
+            <i class="bi bi-layers-fill lp-brand-icon"></i>
+            <span>Landing</span>
+          </a>
+          <p class="lp-footer-brand-desc">
+            Helping businesses grow with powerful, fast, and beautiful digital experiences.
+          </p>
+          <div class="lp-social-links mt-3">
+            <a href="#" id="social-twitter" class="lp-social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" id="social-facebook" class="lp-social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" id="social-linkedin" class="lp-social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" id="social-github" class="lp-social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Links Column -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="lp-footer-heading">Product</h6>
+          <ul class="lp-footer-links">
+            <li><a href="#" id="footer-features">Features</a></li>
+            <li><a href="#" id="footer-pricing">Pricing</a></li>
+            <li><a href="#" id="footer-docs">Documentation</a></li>
+            <li><a href="#" id="footer-changelog">Changelog</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="lp-footer-heading">Company</h6>
+          <ul class="lp-footer-links">
+            <li><a href="#" id="footer-about">About</a></li>
+            <li><a href="#" id="footer-blog">Blog</a></li>
+            <li><a href="#" id="footer-careers">Careers</a></li>
+            <li><a href="#" id="footer-press">Press</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div class="col-lg-4 col-md-6">
+          <h6 class="lp-footer-heading">Contact Us</h6>
+          <ul class="lp-footer-contact">
+            <li><i class="bi bi-geo-alt-fill"></i> 123 Business Ave, San Francisco, CA</li>
+            <li><i class="bi bi-envelope-fill"></i> hello@landing.io</li>
+            <li><i class="bi bi-telephone-fill"></i> +1 (555) 000-0000</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="lp-footer-bottom">
+        <p class="lp-footer-copyright">
+          &copy; 2025 Landing. All rights reserved.
+        </p>
+        <div class="lp-footer-legal">
+          <a href="#" id="footer-privacy">Privacy Policy</a>
+          <a href="#" id="footer-terms">Terms of Service</a>
+          <a href="#" id="footer-cookies">Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>

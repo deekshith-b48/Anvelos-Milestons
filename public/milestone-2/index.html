@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link href="./dist/tailwind.css" rel="stylesheet" />
+</head>
+<body class="bg-light-bg dark:bg-dark-bg text-slate-800 dark:text-slate-200 font-sans transition-colors duration-300">
+  <!-- Sidebar -->
+  <aside class="fixed inset-y-0 left-0 w-64 bg-light-surface dark:bg-dark-surface border-r border-light-border dark:border-dark-border hidden md:block">
+    <div class="flex flex-col h-full">
+      <div class="p-6">
+        <h2 class="text-xl font-bold text-primary-600 dark:text-primary-400">Admin</h2>
+      </div>
+      <nav class="flex-1 px-2 space-y-1" id="sidebar-links">
+        <a href="#" class="sidebar-link active"><span>🏠</span>Dashboard</a>
+        <a href="#" class="sidebar-link"><span>📊</span>Analytics</a>
+        <a href="#" class="sidebar-link"><span>🛒</span>Orders</a>
+        <a href="#" class="sidebar-link"><span>⚙️</span>Settings</a>
+      </nav>
+      <div class="p-4">
+        <label class="toggle flex items-center cursor-pointer">
+          <input type="checkbox" id="theme-toggle" class="sr-only" />
+          <div class="toggle-track"></div>
+          <span class="ml-3 text-sm">Dark Mode</span>
+        </label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <div class="ml-0 md:ml-64 min-h-screen flex flex-col">
+    <!-- Top navigation -->
+    <header class="bg-light-surface dark:bg-dark-surface border-b border-light-border dark:border-dark-border p-4 flex items-center justify-between">
+      <h1 class="text-2xl font-semibold">Dashboard</h1>
+      <button class="md:hidden btn btn-primary" id="menu-btn">☰</button>
+    </header>
+    <main class="p-6 space-y-6">
+      <!-- Stat Cards -->
+      <section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="stat-card">
+          <h3 class="text-sm font-medium text-slate-500 dark:text-slate-400">Revenue</h3>
+          <p class="mt-2 text-2xl font-bold text-primary-600">$12,345</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="text-sm font-medium text-slate-500 dark:text-slate-400">Users</h3>
+          <p class="mt-2 text-2xl font-bold text-primary-600">3,210</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="text-sm font-medium text-slate-500 dark:text-slate-400">Orders</h3>
+          <p class="mt-2 text-2xl font-bold text-primary-600">452</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="text-sm font-medium text-slate-500 dark:text-slate-400">Growth</h3>
+          <p class="mt-2 text-2xl font-bold text-primary-600">+12.5%</p>
+        </div>
+      </section>
+
+      <!-- Recent Orders Table -->
+      <section class="bg-light-surface dark:bg-dark-surface rounded-2xl p-4 shadow-card">
+        <h2 class="text-lg font-semibold mb-4">Recent Orders</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Status</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#00123</td>
+              <td>Jane Doe</td>
+              <td><span class="badge badge-success">Completed</span></td>
+              <td>$125.00</td>
+            </tr>
+            <tr>
+              <td>#00124</td>
+              <td>John Smith</td>
+              <td><span class="badge badge-warning">Pending</span></td>
+              <td>$89.99</td>
+            </tr>
+            <tr>
+              <td>#00125</td>
+              <td>Alice Johnson</td>
+              <td><span class="badge badge-danger">Cancelled</span></td>
+              <td>$0.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="./src/script.js"></script>
+</body>
+</html>
